@@ -21,9 +21,11 @@
         </div>
 
         <form id="guess-form">
-            <input type="text" id="guess-input" placeholder="Your Guess" maxlength="1" autocomplete="off">
-            <button type="submit" class="btn">Guess</button>
+            <input type="text" id="guess-input" placeholder="Your Guess" maxlength="1" autocomplete="off"  onfocus="this.placeholder=''" 
+       onblur="this.placeholder='Your Guess'">
+            <button type="submit" class="btn">Submit</button>
         </form>
+        <div class="round-info"></div>
     </div>
 
     </div>
