@@ -111,10 +111,10 @@ body {
 
 .round-info {
     text-align: center;
-    font-family: "Merienda", cursive;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
     font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
     margin: 50px;
     color: #ffffff;

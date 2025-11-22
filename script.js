@@ -48,15 +48,16 @@ function game(letter) {
     for (let i = 0; i < n; i++) {
         if (word[i] == letter)
         {
-            roundInfo.textContent = `${prompts[Math.floor(Math.random() * prompts.length)]}`;
             boxes[i].textContent = letter;
             flag=true;
         }
     }
+    if(flag) roundInfo.textContent = `${prompts[Math.floor(Math.random() * prompts.length)]}`;
     if (!flag) {
         chances--;
         roundInfo.textContent = `Wrong Guess! Chances remaining ${chances}`;
         if (chances<=0) {
+            
             roundInfo.textContent = `GAME OVER! Your word: ${word}`;
             display.remove();
             form.remove();
