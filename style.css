@@ -9,7 +9,22 @@ body {
     display: flex;
     flex-direction: column;
     background: url("https://cdn.statically.io/img/codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg?f=webp&w=720") center/cover no-repeat;
+    opacity: 0; 
+    animation-name: fadeIn;
+    animation-duration: 2s; 
+    animation-timing-function: ease-in; 
+    animation-fill-mode: forwards;
 }
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}  
 
 .header {
     display: inline-block;    
@@ -23,7 +38,7 @@ body {
     border-bottom: 2px solid white;
     padding: 30px 10px 5px 10px;
     font-size: 38px;
-    color: #fff;
+    color: #ffffff;
 }
 
 
@@ -52,21 +67,55 @@ body {
     color: antiquewhite;
 }
 
-#guess-input, #guess-form {
+#guess-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#guess-input {
     align-self: center;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
-    color: rgb(224, 224, 224);
+    text-align: center;
+    border: 5px solid rgb(102, 93, 143);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
     background: transparent;
     padding: 8px;
 }
 
-.btn, #guess-form {
+#guess-input::placeholder {
+    color: white;     
+    text-align: center;     
+    opacity: 1;            
+    font-weight: 200;     
+    font-size: 18px;       
+    font-family: "Poppins", sans-serif; 
+}
+
+.btn {
     align-self: center;
     background: transparent;
-    border-radius: 5px;
-    border: 2px solid black;
     margin: 10px;
+    border: 3px solid rgb(150, 86, 141);
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif; 
+    color: #fff;
+    font-weight: 200;
+}
+
+
+.round-info {
+    text-align: center;
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    margin: 50px;
+    color: #ffffff;
 }
 
 .letters {
