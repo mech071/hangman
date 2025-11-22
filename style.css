@@ -1,0 +1,86 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url("https://cdn.statically.io/img/codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg?f=webp&w=720") center/cover no-repeat;
+}
+
+.header {
+    display: inline-block;    
+    padding-bottom: 8px;      
+    border-bottom: 3px solid #fff;
+    align-self: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding-bottom: 5px; 
+    border-bottom: 2px solid white;
+    padding: 30px 10px 5px 10px;
+    font-size: 38px;
+    color: #fff;
+}
+
+
+.main {
+    flex: 1;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.word-container {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 150px;
+}
+
+.prompts {
+    display: flex;
+    padding-bottom: 10px;
+    font-family: Poppins, sans-serif;
+    font-weight: 390;
+    font-size: 18px;
+    color: antiquewhite;
+}
+
+#guess-input, #guess-form {
+    align-self: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: rgb(224, 224, 224);
+    background: transparent;
+    padding: 8px;
+}
+
+.btn, #guess-form {
+    align-self: center;
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.letters {
+    width: 40px;
+    height: 30px;
+    border-bottom: 3px solid #fff;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    font-family: Poppins, sans-serif;
+}
+
+.footer {
+    text-align: center;
+    color: #928b8b;
+    padding-bottom: 12px;
+}
