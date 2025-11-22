@@ -24,8 +24,10 @@ for (let i = 0; i < word.length; i++) {
     container.appendChild(box);
 }
 let chances = 3;
-const form = document.getElementById("guess-form");
-const input = document.getElementById("guess-input");
+const form = document.querySelector("#guess-form");
+const input = document.querySelector("#guess-input");
+const roundInfo = document.querySelector(".round-info");
+const display = document.querySelector(".prompts");
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -42,17 +44,21 @@ function game(letter) {
     const n = word.length
     let flag = false;
     const boxes = Array.from(document.querySelectorAll(".letters"));
+    let prompts=["Good Guess!","Amazing!","Keep Going!","Perfect!"];
     for (let i = 0; i < n; i++) {
         if (word[i] == letter)
         {
+            roundInfo.textContent = `${prompts[Math.floor(Math.random() * prompts.length)]}`;
             boxes[i].textContent = letter;
             flag=true;
         }
     }
     if (!flag) {
         chances--;
+        roundInfo.textContent = `Wrong Guess! Chances remaining ${chances}`;
         if (chances<=0) {
-            alert(`Game over! Word was: ${word}`);
+            roundInfo.textContent = `GAME OVER! Your word: ${word}`;
+            display.remove();
             form.remove();
             return;
         }
@@ -60,7 +66,8 @@ function game(letter) {
 
     const won = boxes.every(box => box.textContent !== "*");
     if (won) {
-        alert("You won!");
+        roundInfo.textContent = `You Won!`;
+        display.remove();
         form.remove();
     }
 }
