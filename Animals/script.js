@@ -1,16 +1,16 @@
 const words = [
-    "india",
-    "france",
-    "italy",
-    "spain",
-    "australia",
-    "argentina",
-    "brazil",
-    "canada",
-    "china",
-    "america",
-    "russia",
-    "germany"
+    "tiger",
+    "lion",
+    "elephant",
+    "deer",
+    "fox",
+    "cat",
+    "dog",
+    "giraffe",
+    "rabbit",
+    "monkey",
+    "cow",
+    "goat"
 ];
 
 const word = words[Math.floor(Math.random() * words.length)];
@@ -40,17 +40,18 @@ form.addEventListener("submit", function (e) {
 
     form.reset();
 });
-
+let wordArr = word.split("");
 function game(letter) {
     const n = word.length
     let flag = false;
     const boxes = Array.from(document.querySelectorAll(".letters"));
     let prompts=["Good Guess!","Amazing!","Keep Going!","Perfect!"];
     for (let i = 0; i < n; i++) {
-        if (word[i] == letter)
+        if (wordArr[i] == letter)
         {
             boxes[i].textContent = letter;
             flag=true;
+            wordArr[i]='@';
         }
     }
     if(flag) roundInfo.textContent = `${prompts[Math.floor(Math.random() * prompts.length)]}`;

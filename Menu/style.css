@@ -1,0 +1,83 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url("https://cdn.statically.io/img/codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg?f=webp&w=720") center/cover no-repeat;
+    opacity: 0; 
+    animation: fadeIn 2s ease-in forwards;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        
+    }
+    100% {
+        opacity: 1;
+    }
+}  
+
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header {
+    display: inline-block;    
+    padding-bottom: 8px;      
+    border-bottom: 3px solid #fff;
+    align-self: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding-bottom: 5px; 
+    border-bottom: 2px solid white;
+    padding: 30px 10px 5px 10px;
+    font-size: 38px;
+    color: #ffffff;
+}
+
+.main {
+    flex: 1 1 auto;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer {
+    text-align: center;
+    color: #928b8b;
+    padding-bottom: 12px;
+}
+
+.header.animate { animation-delay: 0s; }

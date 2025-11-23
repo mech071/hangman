@@ -8,7 +8,7 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    background: url("https://cdn.statically.io/img/codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg?f=webp&w=720") center/cover no-repeat;
+    background: url("https://static.vecteezy.com/system/resources/thumbnails/013/074/425/small_2x/flat-exotic-animal-background-free-vector.jpg") center/cover no-repeat;
     opacity: 0; 
     animation: fadeIn 2s ease-in forwards;
 }
@@ -51,9 +51,14 @@ body {
     border-bottom: 2px solid white;
     padding: 30px 10px 5px 10px;
     font-size: 38px;
-    color: #ffffff;
+    color: #0b1831;
 }
 
+.header > div 
+{
+    font-family: "Merienda", cursive;
+    border: none;
+}
 
 .main {
     flex: 1 1 auto;  
@@ -79,7 +84,7 @@ body {
     font-family: Poppins, sans-serif;
     font-weight: 390;
     font-size: 18px;
-    color: antiquewhite;
+    color: rgb(0, 0, 0);
 }
 
 #guess-form {
@@ -94,16 +99,16 @@ body {
     text-align: center;
     border: 5px solid rgb(102, 93, 143);
     border-radius: 5px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     background: transparent;
     padding: 8px;
 }
 
 #guess-input::placeholder {
-    color: white;     
+    color: rgb(0, 0, 0);     
     text-align: center;     
     opacity: 1;            
-    font-weight: 200;     
+    font-weight: 250;     
     font-size: 18px;       
     font-family: "Poppins", sans-serif; 
 }
@@ -117,8 +122,8 @@ body {
     padding: 10px 20px 10px 20px;
     cursor: pointer;
     font-family: "Poppins", sans-serif; 
-    color: #fff;
-    font-weight: 200;
+    color: #000000;
+    font-weight: 250;
 }
 
 
@@ -130,7 +135,7 @@ body {
     font-weight: 400;
     font-size: 20px;
     margin: 50px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .letters {
@@ -141,13 +146,13 @@ body {
     border-bottom: 3px solid #fff;
     font-size: 16px;
     text-align: center;
-    color: #fff;
+    color: #000000;
     font-family: Poppins, sans-serif;
 }
 
 .footer {
     text-align: center;
-    color: #928b8b;
+    color: #635f5f;
     padding-bottom: 12px;
 }
 

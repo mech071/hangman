@@ -1,37 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangman</title>
-    <link href="style.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    </style>
+    <link href="Menu/style.css" rel="stylesheet">
 </head>
-
 <body>
-    <div class="header animate">HANGMAN</div>
-    <div class="main">
-        <div class="word-container animate"></div>
-
-        <div class="prompts">
-            Enter your guess!
-        </div>
-        <form id="guess-form" class="animate">
-            <input type="text" id="guess-input" placeholder="Your Guess" maxlength="1" autocomplete="off"  onfocus="this.placeholder=''" 
-       onblur="this.placeholder='Your Guess'">
-            <button type="submit" class="btn">Submit</button>
-        </form>
-        <div class="round-info animate"></div>
+    <div class="header">
+        HANGMAN
     </div>
-
+    <div class="main">
+        <a href="Animals/index.html" class="button">Animals</a>
+        <a href="Countries/index.html" class="button">Countries</a>
+        <a href="Sports/index.html" class="button">Sports</a>
     </div>
     <div class="footer">
         © Snehasis Chakraborty | https://github.com/mech071
     </div>
-    <script src="script.js"></script>
 </body>
-
 </html>
