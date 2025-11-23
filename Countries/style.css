@@ -45,19 +45,13 @@ body {
     border-bottom: 3px solid #fff;
     align-self: center;
     text-align: center;
-    font-family: "Poppins", sans-serif;
+    font-family: "Merienda", cursive;
     font-weight: 600;
     padding-bottom: 5px; 
     border-bottom: 2px solid white;
     padding: 30px 10px 5px 10px;
     font-size: 38px;
     color: #0b1831;
-}
-
-.header > div 
-{
-    font-family: "Merienda", cursive;
-    border: none;
 }
 
 .main {
