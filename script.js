@@ -1,15 +1,16 @@
 const words = [
-    "mamba",
-    "bunk",
-    "attendance",
-    "engineering",
-    "mathematics",
-    "physics",
-    "humanities",
-    "chatgpt",
-    "perplexity",
-    "claude",
-    "gemini"
+    "india",
+    "france",
+    "italy",
+    "spain",
+    "australia",
+    "argentina",
+    "brazil",
+    "canada",
+    "china",
+    "america",
+    "russia",
+    "germany"
 ];
 
 const word = words[Math.floor(Math.random() * words.length)];

@@ -12,19 +12,19 @@
 </head>
 
 <body>
-    <div class="header">HANGMAN</div>
+    <div class="header animate">HANGMAN</div>
     <div class="main">
-        <div class="word-container"></div>
+        <div class="word-container animate"></div>
 
         <div class="prompts">
             Enter your guess!
         </div>
-        <form id="guess-form">
+        <form id="guess-form" class="animate">
             <input type="text" id="guess-input" placeholder="Your Guess" maxlength="1" autocomplete="off"  onfocus="this.placeholder=''" 
        onblur="this.placeholder='Your Guess'">
             <button type="submit" class="btn">Submit</button>
         </form>
-        <div class="round-info"></div>
+        <div class="round-info animate"></div>
     </div>
 
     </div>
