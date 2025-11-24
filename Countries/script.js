@@ -61,6 +61,9 @@ function game(letter) {
         if (chances<=0) {
             
             roundInfo.textContent = `GAME OVER! Your word: ${word}`;
+            document.querySelector("#secret").classList.remove("hidden");
+            document.querySelector("#secret1").classList.remove("hidden");
+            container.remove();
             display.remove();
             form.remove();
             return;
@@ -70,6 +73,9 @@ function game(letter) {
     const won = boxes.every(box => box.textContent !== "*");
     if (won) {
         roundInfo.textContent = `You Won!`;
+        document.querySelector("#secret").classList.remove("hidden");
+        document.querySelector("#secret").classList.remove("hidden");
+        container.remove();
         display.remove();
         form.remove();
     }
