@@ -158,6 +158,19 @@ body {
     cursor: pointer;
 }
 
+.animate1 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp1 0.8s ease forwards;
+}
+
+@keyframes fadeUp1 {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #secret {
     margin-bottom: 20px;
 }
