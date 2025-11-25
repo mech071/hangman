@@ -74,7 +74,7 @@ function game(letter) {
     if (won) {
         roundInfo.textContent = `You Won!`;
         document.querySelector("#secret").classList.remove("hidden");
-        document.querySelector("#secret").classList.remove("hidden");
+        document.querySelector("#secret1").classList.remove("hidden");
         container.remove();
         display.remove();
         form.remove();
