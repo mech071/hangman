@@ -6,9 +6,9 @@ body {
 }
 
 body {
+    background:linear-gradient(135deg,#610505,#612e1e,#ff5722);
     display: flex;
     flex-direction: column;
-    background: url("https://cdn.statically.io/img/codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg?f=webp&w=720") center/cover no-repeat;
     opacity: 0; 
     animation: fadeIn 2s ease-in forwards;
 }
